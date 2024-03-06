@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proste Krypto</title>
+    <link rel="icon" href="gfx/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+    <script src="js/crypto.js" type="module"></script>
+</head>
+<body>
+<div id="body">
+<img src="gfx/bg.png" id="bg"/>
+    <h1>&nbsp&nbsp&nbspPROSTE CRYPTO</h1>
+    <div id="buttons">
+        <button id="googleLoginButton">Zaloguj przez Google</button>
+        <button id="logoutButton" style="display: none;">Wyloguj</button>
+    </div>
+    <p id="userEmail"></p>
+    <p id="balance"></p>
+<div id="crypto">
+    <h2>Wybierz kryptowalutę:</h2>
+    <label for="cryptoSelect">Cena dla:</label>
+    <select id="cryptoSelect">
+        <option value="bitcoin" selected>Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <option value="solana">Solana</option>
+        <option value="ripple">XRP (Ripple)</option>
+        <option value="cardano">Cardano</option>
+        <option value="polkadot">Polka Dot (DOT)</option>
+        <option value="the-graph">The Graph (GRT)</option>
+        <option value="matic-network">Matic (Polygon)</option>
+    </select>
+    <br><br>
+    <h1 id="cryptoPrice">-</h1><br>
+    <span id="buy" style="display: none">
+        <h2>Zakup kryptowaluty</h2>
+        <label for="buyAmount">Ilość:</label>
+        <input type="number" id="buyAmount" name="buyAmount" min="0" step="1">
+        <button id="buyButton">Kup</button>
+    </span>
+</div>
+
+<div id="mycrypto" style="display:none">
+    <h2>Moje kryptowaluty:</h2>
+    <div id="cryptoList">brak</div>
+</div>
+
+<div id="gecko">
+    dostawca cen kryptowalut:<br>
+    <img src="gfx/gecko.jpg" style="width:250px;opacity: 80%;"/>
+</div>
+
+</div>
+</body>
+</html>
