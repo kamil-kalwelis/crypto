@@ -4,12 +4,13 @@ Projekt uproszczonej giełdy kryptowalutowej, wykonany w technologii JavaScript 
 
 Funkcje:
 1. Aplikacja używa API CoinGecko, do pobierania aktualnych cen kryptowalut.
-2. Nowy użytkownik otrzymuje saldo początkowe - 1 000 000 USDT.
-3. Korzystając z salda, użytkownik może zakupić wybrane kryptowaluty.
+2. Nowy użytkownik nie musi zakładać konta, można się od razu zalogować, poprzez konto Google.
+3. Nowy użytkownik otrzymuje saldo początkowe - 1 000 000 USDT.
+4. Korzystając z salda, użytkownik może zakupić wybrane kryptowaluty.
 5. Saldo oraz lista zakupionych tokenów, zapisywane są dla każdego użytkownika w bazie Firebase.
-6. Aktualne saldo oraz lista z zakupionymi kryptowalutami jest odświeżana na stronie.
+6. Aktualne saldo oraz lista z zakupionymi kryptowalutami jest odświeżana na stronie, po wszelkich zmianach.
 7. Cena wybranej kryptowaluty, jest aktualizowana co 30 sekund i jej wartość jest odświeżana na stronie.
-8. Użytkownik może sprzedać, wcześniej zakupione tokeny, po aktualnej cenie pobranej przez api.
+8. Użytkownik może sprzedać, wcześniej zakupione tokeny, po aktualnej cenie pobranej przez API.
 
 
 UWAGA!
