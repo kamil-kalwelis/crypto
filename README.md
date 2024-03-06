@@ -17,5 +17,3 @@ UWAGA!
 API CoinGecko jest w wersji demonstracyjnej i zawiera ograniczenia zapytań w czasie.
 Po przekroczeniu limitu, program przestaje działać prawidłowo i należy odczekać 1 minutę,
 co automatycznie przywróci poprawne działanie skryptu.
-
-W plikach projektu znajduje się dwuminutowy film ilustrujący działanie programu.
